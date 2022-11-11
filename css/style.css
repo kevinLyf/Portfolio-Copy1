@@ -1,0 +1,687 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root {
+    --main-color:#ea1e63;
+    --sub-color:#ffffff;
+    --gray-color:#f4f4f4
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+/* BODY */
+body {
+    font-size: 0.9rem;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #8c8c8c;
+}
+
+/* HEADER */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    height: 10vh;
+}
+
+/* LOGO TITLE */
+.header .logo-title {
+    font-size: 22pt;
+    font-family: "Lato", sans-serif;
+    letter-spacing: .3rem;
+    color: var(--sub-color);
+
+}
+
+/* NAVBAR MENU ICON */
+.navbar .menu-icon {
+    display: none;
+    width: 2.8rem;
+}
+
+/* NAVBAR LI */
+.header .navbar ul{
+    display: flex;
+    align-items: center;
+}
+
+/* NAVBAR UL LI */
+.header .navbar ul li {
+    margin: 0 .6rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+
+/* NAVBAR UL LI A */
+.header .navbar ul li a {
+    color: var(--sub-color);
+}
+
+/* MAIN */
+.main {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../assets/img/backgrounds/background3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+}
+
+/* INTRO */
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    text-align: center;
+}
+
+/* INTRO TITLE */
+.intro-title {
+    font-weight: 600;
+    font-size: 29pt;
+}
+
+/* INTRO SUB */
+.intro-sub {
+    font-size: 65pt;
+    margin: 2rem 0;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+
+}
+
+/* INTRO TITLES */
+.intro-title, .intro-sub {
+    font-family: "Poppins", sans-serif;
+    color: #ffffff;
+}
+
+/* INTRO BTN */
+.intro .intro-btn {
+    padding: 1rem 5rem;
+    border: none;
+    border-radius: .3rem;
+    background-color: var(--main-color);
+    color: var(--sub-color);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 14pt;
+    cursor: pointer;
+}
+
+/* INTRO BTN HOVER */
+.intro .intro-btn:hover {
+    transition: .3s;
+    background-color: #c0154e;
+}
+
+/* ABOUT */
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 110vh;
+    font-family: "Poppins", sans-serif;
+    padding: 0 5rem;
+}
+
+/* ABOUT INFO */
+.about-left-info, .about-middle-info, .about-right-info {
+    width: 100%;
+}
+
+/* ABOUT RESPONSIVE MODE */
+.about-responsive-mode {
+    display: flex;
+}
+
+/* ABOUT LEFT */
+.about-left-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: end;
+}
+
+/* LEFT INFO TITLE */
+.left-info-title {
+    font-size: 25pt;
+}
+
+/* LEFT INFO JOB */
+.left-info-job {
+    font-size: 14pt;
+    margin-bottom: .6rem;
+    font-weight: 600;
+    letter-spacing: .2rem;
+}
+
+/* LEFT INFO BTN */
+.left-info-btn {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14pt;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    background-color: var(--main-color);
+    color: var(--sub-color);
+    padding: .9rem 2rem;
+    border: none;
+    cursor: pointer;
+}
+
+/* LEFT INFO BTN HOVER */
+.left-info-btn:hover {
+    transition: .3s;
+    background-color: #c0154e;
+}
+
+/* LEFT INFO BTN ICON */
+.left-info-btn-icon {
+    margin-left: .5rem;
+    width: 1.2rem;
+}
+
+/* ABOUT MIDDLE */
+.about-middle-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* MIDDLE INFO IMG */
+.middle-info-img {
+    width: 14rem;
+}
+
+/* ABOUT RIGHT */
+.right-info-title {
+    font-weight: 600;
+}
+
+/* RIGHT INFO SKILL NAME*/
+.right-info-skillname {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: .6rem;
+}
+
+/* RIGHT INFO SKILL NAME SPAN*/
+.right-info-skillname span {
+    font-size: 14pt;
+    font-weight: 500;
+    font-family: "Lato", sans-serif;
+}
+
+/* SKILL */
+.skill {
+    margin: 1.3rem 0;
+}
+
+.right-info-bar-full {
+    width: 100%;
+    height: .6rem;
+    background-color: #efefef;
+    border-radius: .2rem;
+}
+
+/* SKILL 1 */
+.right-info-bar1 {
+    width: 95%;
+    height: 100%;
+    background-color: var(--main-color);
+    border-radius: .2rem;
+
+}
+
+/* SKILL 2 */
+.right-info-bar2 {
+    width: 90%;
+    height: 100%;
+    background-color: var(--main-color);
+    border-radius: .2rem;
+
+}
+
+/* SKILL 3 */
+.right-info-bar3 {
+    width: 80%;
+    height: 100%;
+    background-color: var(--main-color);
+    border-radius: .2rem;
+
+}
+
+/* SKILL 4 */
+.right-info-bar4 {
+    width: 70%;
+    height: 100%;
+    background-color: var(--main-color);
+    border-radius: .2rem;
+
+}
+
+/* SKILL 5 */
+.right-info-bar5 {
+    width: 85%;
+    height: 100%;
+    background-color: var(--main-color);
+    border-radius: .2rem;
+
+}
+
+/* SERVICES */
+.services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--gray-color);
+}
+
+.services-title {
+    font-size: 35pt;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    
+}
+
+.services-title::after {
+    content: '';
+    display: block;
+    position: relative;
+    left: 25%;
+    width: 8rem;
+    margin-top: .6rem;
+    height: .2rem;
+    border-radius: .3rem;
+    background-color: var(--main-color);
+}
+
+.services-title::before {
+    content: '';
+    display: block;
+    position: relative;
+    left: 25%;
+    width: 8rem;
+    margin-bottom: .6rem;
+    height: .2rem;
+    border-radius: .3rem;
+    background-color: var(--main-color);
+}
+
+.services-cards {
+    margin-top: 8rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0 5rem;
+}
+
+.services-card img {
+    margin-bottom: 3rem;
+    width: 3rem;
+}
+.services-cards h3{
+    color: #2a2a2a;
+    font-family: "Inter", sans-serif;
+    font-size: 19pt;
+    margin-bottom: 1rem;
+    
+}
+
+.services-cards p {
+    color: #5f5f5f;
+    font-family: "Poppins", sans-serif;
+}
+
+/* CARD */
+.services-card {
+    text-align: center;
+}
+
+.services-card:hover img{
+    animation: iconSpin 1s ease-in-out forwards;
+}
+.services-card:hover h3{
+    color: var(--main-color);
+}
+
+/* SERVICES INFO */
+.services-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+    background-color: var(--main-color);
+    width: 100%;
+    height: 25vh ;
+}
+
+.services-info-card {
+    margin: 0 5rem;
+    text-align: center;
+    color: var(--sub-color);
+    font-family: "Poppins", sans-serif;
+}
+.services-info-card h3 {
+    font-size: 32pt;
+}
+
+.services-info-card img {
+    width: 2rem;
+}
+
+
+/* ANIMATIONS */
+@keyframes iconSpin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* RESPONSIVIDADE */
+@media (max-width:850px) {
+    /* HEADER */
+    .header .navbar ul {
+        display: none;
+    }
+
+    .header .navbar .menu-icon {
+        display: block;
+    }
+}
+
+@media (max-width:1070px) {
+    /* ABOUT */
+    .about {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /* ABOUT RESPONSIVE MODE */
+    .about-responsive-mode {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width:740px) {
+    /* ABOUT */
+    .about {
+        height: 120vh;
+    }
+    .about-responsive-mode {
+        flex-direction: column;
+    }
+    /* ABOUT LEFT */
+    .about-left-info {
+        align-items: center;
+        text-align: center;
+    }
+
+    /* ABOUT MIDDLE */
+    .about-middle-info {
+        order: -1;
+    }
+
+    /* ABOUT MIDDLE IMG */
+    .middle-info-img {
+        width: 10rem;
+    }
+
+    /* LEFT INFO BTN */
+    .left-info-btn {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width:980px) {
+    /* SERVICES CARD */
+    .services-cards {
+        flex-direction: column;
+        align-content: space-between;
+        gap: 2rem;
+        margin: 0;
+    }
+
+    /* SERVICES */
+    .services {
+        height: auto;
+    }
+
+    /* SERVICES TITLE */
+    .services-title {
+        margin-top: 2rem;
+        font-size: 20pt;
+    }
+
+    /* SERVICES TITLE BEFORE*/
+    .services-title::before {
+        width: 6rem;
+    }
+
+    /* SERVICES TITLE AFTER*/
+    .services-title::after {
+        width: 6rem;
+    }
+
+    /* SERVICES CARD */
+    .services-card {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1.5rem;
+        align-items: center;
+    }
+
+    /* SERVICES CARD H3 */
+    .services-card h3 {
+        font-size: 12;
+    }
+
+    /* SERVICES CARD P */
+    .services-card p{
+        margin: 0;
+        font-size: 9pt;
+        text-align: center;
+        width: 80%;
+
+    }
+
+    /* SERVICES CARD IMG */
+    .services-card img {
+        width: 2rem;
+        margin-bottom: .8rem;
+    }
+   
+    /* SERVICES INFO */
+    .services-info {
+        height: 15vh;
+    }
+
+    /* SERVICES INFO CARD */
+    .services-info-card {
+        margin: 0 2rem;
+    }
+
+    /* SERVICES INFO CARD IMG */
+    .services-info-card img {
+        width: 1.5rem;
+    }
+
+    /* SERVICES INFO CARD H3*/
+    .services-info-card h3{
+        font-size: 18pt;
+    }
+
+    /* SERVICES INFO CARD P*/
+    .services-info-card p {
+        font-size: 8pt;
+    }
+}
+
+@media (max-width:560px) {
+    /* ABOUT */
+    .about {
+        padding: 0 2rem;
+    }
+    .services-cards {
+        padding: 0 1rem;
+    }
+    
+    /* MIDDLE IMG */
+    .middle-info-img {
+        width: 8.5rem;
+    }
+
+    /* LEFT DESCRIPTION */
+    .left-info-description {
+        font-size: 9pt;
+    }
+
+    /* LEFT BTN */
+    .left-info-btn {
+        margin-top: 1rem;
+        font-size: 12pt;
+        padding: .7rem 1.8rem;
+    }
+
+    /* RIGHT INFO TITLE */
+    .right-info-title {
+        font-size: 1pt;
+        font-weight: 600;
+    }
+
+    /* RIGHT INFO SKILL NAME */
+    .right-info-skillname {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: .6rem;
+    }
+
+    /* RIGHT INFO SKILL NAME SPAN */
+    .right-info-skillname span {
+        font-size: 11pt;
+        font-weight: 500;
+        font-family: "Lato", sans-serif;
+    }
+}
+
+@media (max-width:600px) {
+    /* INTRO TITLE */
+    .intro-title {
+        font-size: 19pt;
+    }
+
+    /* INTRO SUB */
+    .intro-sub {
+        font-size: 48pt;
+        margin: 1rem 0;
+    }
+
+    /* SERVICES CARD IMG */
+    .services-card img{
+        width: 1.8rem;
+    }
+
+    /* SERVICES CARD H3 */
+    .services-card h3{
+        font-size: 12pt;
+    }
+
+    /* SERVICES CARD P */
+    .services-card p{
+        font-size: 7pt;
+    }
+
+    /* SERVICES INFO CARD*/
+    .services-info-card {
+        margin: 0 .6rem;
+    }
+
+    /* SERVICES INFO CARD IMG */
+    .services-info-card img {
+        width: 1rem;
+    }
+
+    /* SERVICES INFO CARD H3 */
+    .services-info-card h3 {
+        font-size: 12pt;
+    }
+
+    /* SERVICES INFO CARD P */
+    .services-info-card p {
+        font-size: 7pt;
+    }
+}
+
+@media (max-width:425px) {
+    /* HEADER LOGO TITLE */
+    .header .logo-title {
+        font-size: 14pt;
+    }
+
+    /* NAVBAR MENU ICON */
+    .navbar .menu-icon {
+        width: 2.1rem;
+    }
+
+    /* INTRO TITLE */
+    .intro-title {
+        font-size: 15pt;
+    }
+
+    /* INTRO SUB */
+    .intro-sub {
+        font-size: 34pt;
+    }
+
+    /* INTRO BTN */
+    .intro .intro-btn {
+        padding: .8rem 4rem;
+        border-radius: .3rem;
+        font-size: 12pt;
+    }
+
+    /* SERVICES CARD P */
+    .services-card p{
+        font-size: 8pt;
+    }
+
+    /* LEFT  INFO JOB */
+    .left-info-job {
+        font-size: 11pt;
+    }
+   
+}
